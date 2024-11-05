@@ -1,0 +1,4 @@
+Source	Target	Weight	book
+Velerad	Geralt	1	1
+Geralt	Foltest	5	1
+Foltest	Geralt	4	1

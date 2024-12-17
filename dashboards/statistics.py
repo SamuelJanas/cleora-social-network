@@ -7,9 +7,8 @@ from sklearn.preprocessing import LabelEncoder
 def main():
     raw_data = pd.read_csv('data/witcher.csv', index_col=0)
 
-    raw_data.drop('Type', axis=1, inplace=True)
-
     with st.echo():
+        raw_data.drop('Type', axis=1, inplace=True)
         leSource = LabelEncoder()
         leSource.fit(raw_data['Source'])
         raw_data['Source'] = leSource.transform(raw_data['Source'])
